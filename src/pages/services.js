@@ -4,9 +4,8 @@ import {graphql} from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import HeroSection from '../components/Reusable/Herosection'
-import Infoblock from "../components/Reusable/Infoblock"
-import Dualinfoblock from "../components/Reusable/Dualinfoblock"
-import Teamphotosection from "../components/About/Teamphotosection"
+import Infoblock from '../components/Reusable/Infoblock'
+import ServicesProvided from "../components/Services/ServicesProvided"
 
 const AboutPage = ({data}) => (
   <Layout>
@@ -17,9 +16,8 @@ const AboutPage = ({data}) => (
       subtitle=""
       heroclass="service-background"
     />
-    <Dualinfoblock heading="A Message from CEO" source="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRJF4sAbMS7yEFB1_86rkbB3GtnNpY8pl94PgpxTJihQP3oxmqq&usqp=CAU"/>
-    <Infoblock heading="Our Vision"/>
-    <Teamphotosection />
+    <Infoblock heading="Services"/>
+    <ServicesProvided />
   </Layout>
 )
 
