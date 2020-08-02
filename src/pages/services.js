@@ -7,7 +7,7 @@ import HeroSection from '../components/Reusable/Herosection'
 import Infoblock from '../components/Reusable/Infoblock'
 import ServicesProvided from "../components/Services/ServicesProvided"
 
-const AboutPage = ({data}) => (
+const ServicePage = ({data}) => (
   <Layout>
     <SEO title="Services"/>
     <HeroSection 
@@ -33,4 +33,4 @@ export const query = graphql`
 }
 `
 
-export default AboutPage
+export default ServicePage
