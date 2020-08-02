@@ -33,7 +33,7 @@ export default class CourseCart extends Component {
                                              data-item-id={node.id}
                                              data-item-name={node.title}
                                              data-item-price={node.price}
-                                             data-item-url=""
+                                             data-item-url="https://naveen-democart.netlify.app/"
                                              data-item-image={node.image.fixed} 
                                              className="btn btn-warning snipcart-add-item">Join Now</button>
                                         </div>
