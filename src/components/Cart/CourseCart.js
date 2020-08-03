@@ -2,12 +2,23 @@ import React, { Component } from 'react'
 import Heading from "../Reusable/Heading"
 import Img from 'gatsby-image'
 
+const getCategory = items => {
+    let holdItems = items.map(items =>{
+        return items.node.category
+    })
+    let holdCategories = new Set(holdItems)
+    let categories = Array.from(holdCategories)
+    categories = ["all", ...categories]
+    return categories
+}
+
 export default class CourseCart extends Component {
     constructor(props){
         super(props)
         this.state = {
             courses : props.courses.edges,
             mycourses : props.courses.edges,
+            mycategories : getCategory(props.courses.edges)
         }
     }
     render() {
